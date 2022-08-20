@@ -9,6 +9,7 @@ import steak from './images/steak.png';
 import lava from './images/lava-cake.png';
 import cookiesParfait from './images/cookies&cream-parfait.png';
 import addContact from './pages/contact';
+import './styles/contact.scss';
 
 const aboutUsBtn = document.querySelector('#about-us-btn');
 addAboutUs();
