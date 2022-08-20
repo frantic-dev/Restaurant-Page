@@ -8,6 +8,7 @@ import spaghetti from './images/spaghetti.png';
 import steak from './images/steak.png';
 import lava from './images/lava-cake.png';
 import cookiesParfait from './images/cookies&cream-parfait.png';
+import addContact from './pages/contact';
 
 const aboutUsBtn = document.querySelector('#about-us-btn');
 addAboutUs();
@@ -32,5 +33,6 @@ const contactBtn = document.querySelector('#contact-btn');
 
 contactBtn.addEventListener('click', ()=> {
     [...contentChildren].forEach(child => child.remove())
+    addContact();
     console.log(123)
 })
