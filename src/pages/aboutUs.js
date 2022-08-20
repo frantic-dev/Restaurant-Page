@@ -1,5 +1,5 @@
 const content = document.querySelector('#content');
-export default function addContent () {
+export default function addAboutUs () {
     const head = document.createElement('h1');
     const img = document.createElement('img');
     const para = document.createElement('p');
