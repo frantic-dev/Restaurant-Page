@@ -1,0 +1,38 @@
+@mixin border {
+    border: 1px solid red;
+}
+@mixin flex_between {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+$headerBg: rgba(163, 8, 8, 0.651);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 1.4em;
+}
+header {
+    @include flex_between();
+    padding: 1%;
+    height: 8vh;
+    background-color: $headerBg;
+    #logo ,li {
+       display: inline-block;
+    }
+    #logo {
+        font-size: 4vh;
+    }
+    li {
+        width: min(15vw, 120px);
+        text-align: center;
+        &:hover {
+            border: 1px solid black;
+            padding: 5px;
+            cursor: pointer;
+        }
+    }
+}
