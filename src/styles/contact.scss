@@ -1,0 +1,29 @@
+.contact {
+    background-color: black;
+    color: white;
+}
+.contact_content {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    label {
+        display: block;
+        margin: 10px;
+    }
+    input, textarea {
+        font-size: 15px;
+        padding: 5px;
+    }
+    #submit-btn {
+        display: block;
+        margin: auto;
+        background-color: rgb(61, 146, 61);
+        border: none;
+        color: white;
+    }
+    textarea {
+        width: 100%;
+    }
+
+}

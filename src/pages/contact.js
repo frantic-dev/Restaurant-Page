@@ -1,14 +1,18 @@
 const content = document.querySelector('#content');
+const body = document.querySelector('body');
+
 
 const form = document.createElement('form');
 export default function addContact () {
+    content.className = "contact_content";
+    body.className = "contact";
     content.appendChild(form);
     console.log(form.children.length)
     if (form.children.length === 0) {
     createLabel("Your Name:", "name", "text");
     createLabel("Your Email:", "email", "email");
     createLabel("Your Message:", "message", "textarea");
-    createLabel("", "", 'submit');
+    createLabel("", "submit-btn", 'submit');
     form.addEventListener('submit', (e) => {
         e.preventDefault();
     })}

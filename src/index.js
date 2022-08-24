@@ -1,4 +1,4 @@
-import addAboutUs from './pages/aboutUs';
+import addAboutUs from './pages/home';
 import './styles/index.scss';
 import Burger from './images/burger.jpg';
 import './styles/menu.scss'
@@ -11,10 +11,10 @@ import cookiesParfait from './images/cookies&cream-parfait.png';
 import addContact from './pages/contact';
 import './styles/contact.scss';
 
-const aboutUsBtn = document.querySelector('#about-us-btn');
+const homeBtn = document.querySelector('#home-btn');
 addAboutUs();
 let contentChildren = content.children;
-aboutUsBtn.addEventListener('click', () => {
+homeBtn.addEventListener('click', () => {
     [...contentChildren].forEach(child => child.remove())
     addAboutUs();
 });
@@ -35,5 +35,4 @@ const contactBtn = document.querySelector('#contact-btn');
 contactBtn.addEventListener('click', ()=> {
     [...contentChildren].forEach(child => child.remove())
     addContact();
-    console.log(123)
 })
