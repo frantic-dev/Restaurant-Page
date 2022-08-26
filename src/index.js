@@ -12,15 +12,22 @@ import addContact from './pages/contact';
 import './styles/contact.scss';
 
 const homeBtn = document.querySelector('#home-btn');
+
 addAboutUs();
+
 let contentChildren = content.children;
 homeBtn.addEventListener('click', () => {
     [...contentChildren].forEach(child => child.remove())
     addAboutUs();
 });
-
+const button = document.querySelector('button');
 const menuBtn = document.querySelector('#menu-btn');
-menuBtn.addEventListener('click', () =>{
+
+button.addEventListener('click', showMenu);
+menuBtn.addEventListener('click', showMenu);
+
+
+function showMenu() {
     [...contentChildren].forEach(child => child.remove())
     addMenuOption(Burger, "burger");
     addMenuOption(Taco, 'Shrimp Taco');
@@ -28,7 +35,7 @@ menuBtn.addEventListener('click', () =>{
     addMenuOption(steak, "Steak");
     addMenuOption(lava, 'Lava Cake');
     addMenuOption(cookiesParfait, "Cookies And Cream Parfait")
-});
+}
 
 const contactBtn = document.querySelector('#contact-btn');
 

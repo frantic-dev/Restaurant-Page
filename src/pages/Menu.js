@@ -22,7 +22,15 @@ export default function addMenuOption(plateImg,plateName) {
     myImage.alt = `A picture of ${plateName}`;
     menuOption.appendChild(myImage);
     const caption = document.createElement('div');
-    caption.textContent = plateName;
+    const plate = document.createElement('div');
+    const price = document.createElement('div');
+    plate.className = "plate";
+    plate.textContent = plateName;
+    price.className = "price";
+    let number = 0;
+    price.textContent = 20 + "$" ;
     caption.className = 'caption';
     menuOption.appendChild(caption);
+    caption.appendChild(plate);
+    caption.appendChild(price);
 }

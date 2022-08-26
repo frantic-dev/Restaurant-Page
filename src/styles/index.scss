@@ -15,7 +15,7 @@ $content: rgb(80, 79, 79);
     margin: 0;
     box-sizing: border-box;
 }
-.home {
+body {
     background-color: black;
     color: $bodyFont;
     font-family: sans-serif ;
@@ -57,7 +57,6 @@ header {
     }
 }
 .home_content {
-    @include border();
     padding-top: 8vh;
     height: 100vh;
     @include flex_between();
@@ -68,7 +67,6 @@ header {
     }
     p {
         text-align: center;
-        // @include border();
         width: 50%;
         line-height: 1.5rem;
         padding: 1vh;

@@ -8,13 +8,6 @@
     justify-content: center;
     align-items: flex-end;
 }
-.menu {
-    background-color: rgb(0, 0, 0);
-    color: antiquewhite;
-    header {
-    background-color: black;
-    }
-}
 .menu_content {
     font-family: 'space mono';
     display: flex;
@@ -24,7 +17,6 @@
     padding-top: 8vh;
     margin: auto;
     width: 90%;
-    background-color: black;
     h2 {
         font-family: 'lato';
         width: 100%;
@@ -54,7 +46,9 @@
             top: -2vw;
         }
         .caption {
-            display: inline-block;
+            width: 90%;
+            display: flex;
+            justify-content: space-around;
         }
     }
 }

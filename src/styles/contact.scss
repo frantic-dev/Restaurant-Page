@@ -21,6 +21,9 @@
         background-color: rgb(61, 146, 61);
         border: none;
         color: white;
+        &:hover {
+            filter: saturate(150%);
+        }
     }
     textarea {
         width: 100%;
