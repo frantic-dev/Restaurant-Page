@@ -33,11 +33,15 @@ header {
     width: 100%;
     color: white;
     position: fixed;
+    font-family: sans-serif;
     #logo ,li {
        display: inline-block;
     }
     #logo {
-        font-size: 4vh;
+        font-size: min(4vh, 25px);
+        font-weight: 700;
+        border: 5px solid rgb(255, 255, 255);
+        padding: 5px;
     }
     li {
         width: min(15vw, 120px);
@@ -78,12 +82,12 @@ header {
         background-color: transparent;
         color: aliceblue;
         font-weight: 500;
+        border: 2px solid white;
+        border-radius: 10px;
         &:hover {
-            border: 2px solid rgb(63, 61, 61);
-            background-color: rgba(238, 238, 238, 0.842);
+            outline: 2px solid rgb(63, 61, 61);
+            background-color: rgba(255, 255, 255, 0.925);
             color: black;
-            margin: 8px;
-            border-radius: 10px;
             cursor: pointer;
         }
     }
