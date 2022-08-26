@@ -1,7 +1,62 @@
-.menu-option > img {
-    width: 20vw;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Space+Mono:wght@700&display=swap');
+
+@mixin border {
+    border: 1px solid red;
+}
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 .menu {
-    background-color: rgba(0, 0, 0, 0.815);
+    background-color: rgb(0, 0, 0);
     color: antiquewhite;
+    header {
+        backdrop-filter:blur(20px);
+        font-family: sans-serif;
+    }
+}
+.menu_content {
+    font-family: 'space mono';
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 8vh;
+    margin: auto;
+    width: 90%;
+    background-color: black;
+    h2 {
+        font-family: 'lato';
+        width: 100%;
+        text-align: center;
+        font-size: 15vw;
+        background-color: grey;
+        color: azure;
+        margin: 5vw;
+    }
+    .menu-option {
+        margin: 10px ;
+        padding: 10px;
+        width: min(80vw, 300px);
+        height: min(40vw, 150px);
+        color: black;
+        background-color: white;
+        @include flexCenter();
+        position: relative;
+        border-radius: 20px;
+        img {
+            border-radius: 50%;
+            width: max(10vw, 70px);
+            aspect-ratio: 1;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            left: calc((100% - max(10vw, 70px)) / 2);
+            top: -2vw;
+        }
+        .caption {
+            display: inline-block;
+        }
+    }
 }
