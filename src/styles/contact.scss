@@ -1,12 +1,15 @@
-.contact {
-    background-color: black;
-    color: white;
-}
 .contact_content {
+    padding-top: 10vh;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    flex-flow: row-reverse wrap;
+    width: 70% ;
+    margin: auto;
+    #map {
+        box-shadow: 0 0 5px black;
+    }
     label {
         display: block;
         margin: 10px;
